@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "default to old reddit",
+  "version": "1.0",
+
+  "description": "redirects to www.reddit.com to old.reddit.com",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["default to old reddit.js"]
+    }
+  ],
+
+  "browser_specific_settings": { "gecko": { "id": "extionsion@ancientmollusc.me" } }  
+
+}
